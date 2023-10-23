@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <img src="data:image/jpeg;base64,{{ img }}" alt="Uploaded Image">
+    {% if prediction == "Dogs" %}
+    <p>This is a Dog!</p>
+    {% else %}
+    <p>This is a Cat!</p>
+    {% endif %}
+</body>
+</html>
