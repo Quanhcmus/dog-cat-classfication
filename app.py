@@ -1,6 +1,5 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 import base64
-from PIL import Image
 import tensorflow
 import numpy as np
 import cv2 
