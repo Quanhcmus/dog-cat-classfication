@@ -1,5 +1,6 @@
 # Project dog-cat-classfication
-
+## 0. Status
+This model was only trained with 5000 image data so the efficiency is only 65%. We will improve as soon as possible
 ## 1. Introduction
 This project predicts whether a photo is a dog photo or a cat photo. From the pictures taken from the [link data](https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset). I label them and use them to predict those pictures. Then I deployed it to the local web to import images and display predictions.
 ## 2. Label the data
@@ -143,6 +144,10 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 This code will read the newly created model, resize the image and use the model's prediction method to predict the result, then display the result on the web.
+- This is the website screen when importing photos
+![Alt text](image/result1.png)
+- This is the screen that outputs the prediction results
+![Alt text](image/result2.png)
 ## 5. Reference
 1. [https://flask.palletsprojects.com/en/3.0.x/quickstart/](https://flask.palletsprojects.com/en/3.0.x/quickstart/)
 2. [https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset](https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset)
